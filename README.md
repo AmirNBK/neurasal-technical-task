@@ -33,4 +33,6 @@
  For that you can easily install the dependencies with `npm install`. keep in mind that we have a react project inside timeline/client folder so everything we talk about is happened inside that folder.
  you can run the project by `npm start` after that you need to make changes in the Timeline component. when you finished editing the component you must build and then copy the build folder in the static folder of bakery demo folder.
 
+ Detailed documentation can be found at : [Original Post](https://dev.to/lb/adding-a-react-component-in-wagtail-admin-3e)
+
 
