@@ -1,0 +1,36 @@
+{% extends "wagtailadmin/base.html" %}
+{% comment %} timeline/templates/timeline.html {% endcomment %}
+{% load static %}
+
+{% block titletag %}{{ title }}{% endblock %}
+{% block bodyclass %}timeline{% endblock %}
+
+{% block extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'Timeline.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+  {{ block.super }}
+  <script src="{% static 'Timeline.js' %}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const props = { className: 'inner timeline-content', initialSearchValue: '{{ query_string }}', searchFormId: 'id_q' };
+
+      ReactDOM.render(
+        React.createElement(
+          Timeline.default, // note - using .default here as this is how the global is set up
+          props
+        ), document.getElementById('timeline'));
+    });
+  </script>
+{% endblock %}
+
+{% block content %}
+  {% include "wagtailadmin/shared/header.html" with title=title %}
+  <div class="container">
+    <div id="timeline">
+      {{ title }}
+    </div>
+  </div>
+{% endblock %}

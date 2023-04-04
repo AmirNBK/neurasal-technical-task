@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.sitemaps",
+    "timeline",
 ]
 
 MIDDLEWARE = [
@@ -166,6 +167,7 @@ STATICFILES_FINDERS = [
 
 STATICFILES_DIRS = [
     os.path.join(PROJECT_DIR, "static"),
+    # os.path.join(PROJECT_DIR, os.path.join('timeline','client','build')),  # add the default neutrino.js 'build' folder
 ]
 
 STATIC_ROOT = os.path.join(PROJECT_DIR, "collect_static")
@@ -195,5 +197,7 @@ WAGTAIL_CONTENT_LANGUAGES = LANGUAGES = [
     ("de", "Deutsch"),
     ("ar", "العربيّة"),
 ]
+
+WAGTAILAPI_LIMIT_MAX = 100
 
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "changeme")

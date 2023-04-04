@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://[name]/./src/components/Example/style.css"],"names":[],"mappings":"AAAA,QAAQ,uBAAuB,E","file":"Example.css","sourcesContent":["button { background: lightblue; }"],"sourceRoot":""}

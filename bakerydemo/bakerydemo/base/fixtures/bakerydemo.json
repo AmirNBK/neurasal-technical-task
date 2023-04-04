@@ -1594,7 +1594,7 @@
   },
   {
     "model": "auth.user",
-    "pk": 3,
+    "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$30000$eIoVnauBvLhA$aPWJSlHK+F/rW7SKunxJ/RnXNQHx0uh6K/kVRyPn0XY=",
       "last_login": "2019-04-23T19:58:19.460Z",
