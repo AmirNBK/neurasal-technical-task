@@ -14,7 +14,7 @@
 1. clone the repository `git clone https://github.com/amirNBK/neurasal-technical-task`
 2. change the current directory `cd neurasal-technical-task`
 3. create a virtualenv `python -m venv .env && source .env/bin/activate` ( or if you are in windows you can use `.env\Scripts\activate` to activate the virtualenv )
-4. after activating the virtualenv we need to install the dependencies `pip install -r requirements/development.txt`
+4. after activating the virtualenv we need to install the dependencies `pip install -r bakerydemo/requirements\development.txt`
 5. this is the root of our application but the core app is inside of the bakerydemo folder
 6. `cd ./bakerydemo`
 7. there is no need to build the react components since they are already there for you
